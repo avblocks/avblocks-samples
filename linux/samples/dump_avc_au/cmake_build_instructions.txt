@@ -1,0 +1,23 @@
+### Build from command line  (cd to samples/dump_avc_au)
+
+for 32-bit build: 
+	
+	mkdir build32
+	cd build32
+	cmake -DCMAKE_BUILD_TYPE=Release32 ..
+	make
+	
+for 64-bit build:
+
+	mkdir build64
+	cd build64
+	cmake -DCMAKE_BUILD_TYPE=Release64 ..
+	make
+
+The output executable 'dump_avc_au.app' / 'dump_avc_au64.app'  goes in the SDK/lib dir.
+
+
+### Build from CLion IDE
+
+The CMake project can be opened directly in the CLion IDE.
+It contains 2 targets (dump_avc_au.app and dump_avc_au64.app) with Debug and Release configurations for each target.

@@ -1,0 +1,223 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""CaptureDS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "CaptureDS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_CAPTURE_DS DIALOGEX 0, 0, 361, 241
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CaptureDS (MFC)"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_LIST_AUDIO_DEV,15,17,192,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Device...",IDC_CMD_AUDIO_DEV_PROP,15,32,58,14
+    GROUPBOX        "Audio Devices",IDC_STATIC,7,5,208,46
+    COMBOBOX        IDC_LIST_VIDEO_DEV,15,62,195,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Device...",IDC_CMD_VIDEO_DEV_PROP,15,77,58,14
+    PUSHBUTTON      "Capture...",IDC_CMD_VIDEO_CAPTURE_PROP,79,77,60,14
+    GROUPBOX        "Video Devices",IDC_STATIC,7,50,208,46
+    PUSHBUTTON      "Record",IDC_CMD_RECORD,272,202,71,20
+    LTEXT           "Recording...",IDC_TXT_RECORDING,276,188,40,8
+    CONTROL         "",IDC_PREVIEW,"Static",SS_BLACKFRAME | SS_SUNKEN,220,8,122,87
+    GROUPBOX        "Statistics",IDC_STATIC,7,169,225,66
+    LTEXT           "Rec. Time:",IDC_STATIC,18,182,37,8
+    LTEXT           "Dropped:",IDC_STATIC,23,194,31,8
+    LTEXT           "Processed:",IDC_STATIC,17,203,37,8
+    LTEXT           "Average fps:",IDC_STATIC,11,212,43,8
+    LTEXT           "Current fps:",IDC_STATIC,14,221,40,8
+    LTEXT           "00:00:00",IDC_TXT_REC_TIME,61,182,31,8
+    CONTROL         "[dropped]",IDC_TXT_NUM_DROPPED,"Static",SS_SIMPLE | WS_GROUP,59,194,34,8,WS_EX_RIGHT
+    CONTROL         "[processed]",IDC_TXT_NUM_PROCESSED,"Static",SS_SIMPLE | WS_GROUP,53,203,40,8,WS_EX_RIGHT
+    CONTROL         "[avgfps]",IDC_TXT_AVERAGE_FPS,"Static",SS_SIMPLE | WS_GROUP,65,212,28,8,WS_EX_RIGHT
+    CONTROL         "[curfps]",IDC_TXT_CURRENT_FPS,"Static",SS_SIMPLE | WS_GROUP,66,221,27,8,WS_EX_RIGHT
+    LTEXT           "callbacks:",IDC_STATIC,106,203,33,8
+    LTEXT           "processed:",IDC_STATIC,102,212,37,8
+    LTEXT           "dropped:",IDC_STATIC,108,221,31,8
+    LTEXT           "Audio",IDC_STATIC,159,193,19,8
+    LTEXT           "Video",IDC_STATIC,207,193,19,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,186,196,1,34
+    CONTROL         "[acb]",IDC_TXT_ACB,"Static",SS_SIMPLE | WS_GROUP,140,203,41,8,WS_EX_RIGHT
+    CONTROL         "[aproc]",IDC_TXT_APROC,"Static",SS_SIMPLE | WS_GROUP,138,212,43,8,WS_EX_RIGHT
+    CONTROL         "[adrop]",IDC_TXT_ADROP,"Static",SS_SIMPLE | WS_GROUP,139,221,42,8,WS_EX_RIGHT
+    CONTROL         "[vcb]",IDC_TXT_VCB,"Static",SS_SIMPLE | WS_GROUP,190,203,38,8,WS_EX_RIGHT
+    CONTROL         "[vproc]",IDC_TXT_VPROC,"Static",SS_SIMPLE | WS_GROUP,191,212,37,8,WS_EX_RIGHT
+    CONTROL         "[vdrop]",IDC_TXT_VDROP,"Static",SS_SIMPLE | WS_GROUP,190,221,38,8,WS_EX_RIGHT
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,98,196,1,33
+    LTEXT           "Preset:",IDC_STATIC,13,112,24,8
+    COMBOBOX        IDC_COMBO_PRESETS,56,110,224,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Output file:",IDC_STATIC,13,134,38,8
+    EDITTEXT        IDC_EDIT_OUTPUT_FILE,56,132,224,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_CHOOSE_OUTPUT_FILE,293,132,50,14
+END
+
+IDD_VIDEO_PROPS DIALOGEX 0, 0, 316, 128
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,195,93,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,93,50,14
+    LTEXT           "Video format:",IDC_STATIC,15,29,44,8
+    COMBOBOX        IDC_COMBO_VIDEO_FORMAT,71,27,229,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Frame rate:",IDC_STATIC,15,51,39,8
+    COMBOBOX        IDC_COMBO_FPS,71,49,38,107,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "FPS",IDC_STATIC,116,52,13,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "PrimoSoftware"
+            VALUE "FileDescription", "CaptureDS (MFC)"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CaptureDS.exe"
+            VALUE "LegalCopyright", "(c) PrimoSoftware.  All rights reserved."
+            VALUE "OriginalFilename", "CaptureDS.exe"
+            VALUE "ProductName", "CaptureDS (MFC)"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_CAPTURE_DS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 356
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 236
+    END
+
+    IDD_VIDEO_PROPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 121
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "CaptureDS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,23 @@
+### Build from command line  (cd to samples/overlay_yuv_jpegs_push_pull)
+
+for 32-bit build: 
+	
+	mkdir build32
+	cd build32
+	cmake -DCMAKE_BUILD_TYPE=Release32 ..
+	make
+	
+for 64-bit build:
+
+	mkdir build64
+	cd build64
+	cmake -DCMAKE_BUILD_TYPE=Release64 ..
+	make
+
+The output executable 'overlay_yuv_jpegs_push_pull.app' / 'overlay_yuv_jpegs_push_pull64.app'  goes in the SDK/lib dir.
+
+
+### Build from CLion IDE
+
+The CMake project can be opened directly in the CLion IDE.
+It contains 2 targets (overlay_yuv_jpegs_push_pull.app and overlay_yuv_jpegs_push_pull.app) with Debug and Release configurations for each target.

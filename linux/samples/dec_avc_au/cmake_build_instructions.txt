@@ -1,0 +1,23 @@
+### Build from command line  (cd to samples/dec_avc_au)
+
+for 32-bit build: 
+	
+	mkdir build32
+	cd build32
+	cmake -DCMAKE_BUILD_TYPE=Debug32 ..
+	make
+	
+for 64-bit build:
+
+	mkdir build64
+	cd build64
+	cmake -DCMAKE_BUILD_TYPE=Debug64 ..
+	make
+
+The output executable 'dec_avc_au.app' / 'dec_avc_au64.app' goes to the SDK/lib dir.
+
+
+### Build from CLion IDE
+
+The CMake project can be opened directly in the CLion IDE.
+It contains 2 targets (dec_avc_au.app and dec_avc_au64.app) with Debug and Release configurations for each target.

@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F5627B216070F120043F2F2 /* libAVBlocks.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5627B116070F120043F2F2 /* libAVBlocks.dylib */; };
+		4F5627C01607105E0043F2F2 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F5627BF1607105E0043F2F2 /* CoreFoundation.framework */; };
+		4F9692AA17533E8F0005015F /* mux_mp4_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F9692A917533E8F0005015F /* mux_mp4_file.cpp */; };
+		4F969307175DDCAF0005015F /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4F969304175DDCAF0005015F /* options.cpp */; };
+		4F9F82CA1CC10E38001D134D /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F9F82C91CC10E38001D134D /* ApplicationServices.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7B7DFD50B5A04CC00F6A1B5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4F5627B116070F120043F2F2 /* libAVBlocks.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libAVBlocks.dylib; path = ../../lib/libAVBlocks.dylib; sourceTree = SOURCE_ROOT; };
+		4F5627BF1607105E0043F2F2 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4F9692A917533E8F0005015F /* mux_mp4_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mux_mp4_file.cpp; sourceTree = "<group>"; };
+		4F969304175DDCAF0005015F /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		4F969305175DDCAF0005015F /* options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = options.h; sourceTree = "<group>"; };
+		4F969306175DDCAF0005015F /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util.h; sourceTree = "<group>"; };
+		4F9F82C91CC10E38001D134D /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		A7B7DFD80B5A04CC00F6A1B5 /* mux_mp4_fileDebug */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mux_mp4_fileDebug; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8AD4A0E1C493D7200524CC7 /* program_options.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = program_options.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7B7DFD30B5A04CC00F6A1B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9F82CA1CC10E38001D134D /* ApplicationServices.framework in Frameworks */,
+				4F5627B216070F120043F2F2 /* libAVBlocks.dylib in Frameworks */,
+				4F5627C01607105E0043F2F2 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* ScsiCmd */ = {
+			isa = PBXGroup;
+			children = (
+				4F9F82C91CC10E38001D134D /* ApplicationServices.framework */,
+				4F5627B116070F120043F2F2 /* libAVBlocks.dylib */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				C6859E8C029090F304C91782 /* Documentation */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				4F5627BF1607105E0043F2F2 /* CoreFoundation.framework */,
+			);
+			name = ScsiCmd;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				E8AD4A0E1C493D7200524CC7 /* program_options.h */,
+				4F969304175DDCAF0005015F /* options.cpp */,
+				4F969305175DDCAF0005015F /* options.h */,
+				4F969306175DDCAF0005015F /* util.h */,
+				4F9692A917533E8F0005015F /* mux_mp4_file.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7B7DFD80B5A04CC00F6A1B5 /* mux_mp4_fileDebug */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6859E8C029090F304C91782 /* Documentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Documentation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7B7DFCF0B5A04CC00F6A1B5 /* mux_mp4_file */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B7DFD60B5A04CC00F6A1B5 /* Build configuration list for PBXNativeTarget "mux_mp4_file" */;
+			buildPhases = (
+				A7B7DFD00B5A04CC00F6A1B5 /* Sources */,
+				A7B7DFD30B5A04CC00F6A1B5 /* Frameworks */,
+				A7B7DFD50B5A04CC00F6A1B5 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mux_mp4_file;
+			productInstallPath = "$(HOME)/bin";
+			productName = ScsiCmd;
+			productReference = A7B7DFD80B5A04CC00F6A1B5 /* mux_mp4_fileDebug */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "mux_mp4_file" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* ScsiCmd */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7B7DFCF0B5A04CC00F6A1B5 /* mux_mp4_file */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7B7DFD00B5A04CC00F6A1B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9692AA17533E8F0005015F /* mux_mp4_file.cpp in Sources */,
+				4F969307175DDCAF0005015F /* options.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB923608733DC60010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CONFIGURATION_BUILD_DIR = ../../lib;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = mux_mp4_fileDebug;
+				SDKROOT = macosx;
+				SYMROOT = "$(inherited)";
+				USER_HEADER_SEARCH_PATHS = ../../include;
+			};
+			name = Debug;
+		};
+		4F08D87B161199A100EE1305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					i386,
+					x86_64,
+				);
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CONFIGURATION_BUILD_DIR = ../../lib;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = mux_mp4_file;
+				SDKROOT = macosx;
+				SYMROOT = "$(inherited)";
+				USER_HEADER_SEARCH_PATHS = ../../include;
+			};
+			name = Release;
+		};
+		4F08D87C161199A100EE1305 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"\"$(SRCROOT)/../../lib\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		A7B7DFD70B5A04CC00F6A1B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_MODEL_TUNING = "";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(HOME)/bin";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_2)",
+					"\"$(SRCROOT)/../../lib\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(inherited)";
+				ZERO_LINK = NO;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB923508733DC60010E9CD /* Build configuration list for PBXProject "mux_mp4_file" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB923608733DC60010E9CD /* Debug */,
+				4F08D87B161199A100EE1305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B7DFD60B5A04CC00F6A1B5 /* Build configuration list for PBXNativeTarget "mux_mp4_file" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7B7DFD70B5A04CC00F6A1B5 /* Debug */,
+				4F08D87C161199A100EE1305 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
